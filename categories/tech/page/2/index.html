@@ -1,5 +1,540 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>分类: tech - Shelter</title><meta property="og:type" content="blog"><meta property="og:title" content="Shelter"><meta property="og:url" content="http://yoursite.com/"><meta property="og:site_name" content="Shelter"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://yoursite.com/img/og_image.png"><meta property="article:author" content="vi"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com"},"headline":"Shelter","image":["http://yoursite.com/img/og_image.png"],"author":{"@type":"Person","name":"vi"},"description":""}</script><link rel="icon" href="/img/favicon.ico"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&amp;family=Roboto+Mono"><link rel="stylesheet" href="/css/cyberpunk.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Shelter" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">分类</a></li><li class="is-active"><a href="#" aria-current="page">tech</a></li></ul></nav></div></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/08/03/LeetCode-Dairy-XX/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XX"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-03T06:04:12.000Z" title="2020-08-03T06:04:12.000Z">2020-08-03</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">6 分钟 读完 (大约 903 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/08/03/LeetCode-Dairy-XX/">LeetCode Dairy XX</a></h1><div class="content"><h3 id="二叉树的中序遍历-NO-94"><a href="#二叉树的中序遍历-NO-94" class="headerlink" title="二叉树的中序遍历 NO.94"></a>二叉树的中序遍历 NO.94</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，返回它的<em>中序</em> 遍历。</p>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>分类: tech - Shelter</title><meta property="og:type" content="blog"><meta property="og:title" content="Shelter"><meta property="og:url" content="http://yoursite.com/"><meta property="og:site_name" content="Shelter"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://yoursite.com/img/og_image.png"><meta property="article:author" content="vi"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com"},"headline":"Shelter","image":["http://yoursite.com/img/og_image.png"],"author":{"@type":"Person","name":"vi"},"description":""}</script><link rel="icon" href="/img/favicon.ico"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&amp;family=Roboto+Mono"><link rel="stylesheet" href="/css/cyberpunk.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Shelter" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">分类</a></li><li class="is-active"><a href="#" aria-current="page">tech</a></li></ul></nav></div></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/08/10/LeetCode-Dairy-XXIV/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXIV"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-10T11:49:11.000Z" title="2020-08-10T11:49:11.000Z">2020-08-10</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">7 分钟 读完 (大约 1120 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/08/10/LeetCode-Dairy-XXIV/">LeetCode Dairy XXIV</a></h1><div class="content"><h3 id="有序链表转换二叉搜索树-NO-109"><a href="#有序链表转换二叉搜索树-NO-109" class="headerlink" title="有序链表转换二叉搜索树 NO.109"></a>有序链表转换二叉搜索树 NO.109</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。</p>
+<p>本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。</p>
+<h5 id="代码实现（在链表上操作）："><a href="#代码实现（在链表上操作）：" class="headerlink" title="代码实现（在链表上操作）："></a>代码实现（在链表上操作）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>44 ms</td>
+<td>超过78.31%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>29.5 MB</td>
+<td>超过51.87%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * struct ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode *next;</span><br><span class="line"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    TreeNode* sortedListToBST(ListNode* head) &#123;</span><br><span class="line">        if(!head) return NULL;</span><br><span class="line">        if(!head-&gt;next)&#123;</span><br><span class="line">            return new TreeNode(head-&gt;val);</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode* pre &#x3D; head;</span><br><span class="line">        ListNode* slow &#x3D; head;</span><br><span class="line">        ListNode* fast &#x3D; head;</span><br><span class="line">        while(fast &amp;&amp; fast-&gt;next)&#123;</span><br><span class="line">            pre &#x3D; slow;</span><br><span class="line">            slow &#x3D; slow-&gt;next;</span><br><span class="line">            fast &#x3D; fast-&gt;next-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next &#x3D; NULL;</span><br><span class="line">        TreeNode* rootNode &#x3D; new TreeNode(slow-&gt;val);</span><br><span class="line">        rootNode-&gt;left &#x3D; sortedListToBST(head);</span><br><span class="line">        rootNode-&gt;right &#x3D; sortedListToBST(slow-&gt;next);</span><br><span class="line">        return rootNode;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（原创，转存到数组）："><a href="#代码实现（原创，转存到数组）：" class="headerlink" title="代码实现（原创，转存到数组）："></a>代码实现（原创，转存到数组）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>48 ms</td>
+<td>超过60.47%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>29.8 MB</td>
+<td>超过28.22%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * struct ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode *next;</span><br><span class="line"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    TreeNode* sortedListToBST(ListNode* head) &#123;</span><br><span class="line">        vector&lt;int&gt; nums;</span><br><span class="line">        while(head)&#123;</span><br><span class="line">            nums.push_back(head-&gt;val);</span><br><span class="line">            head &#x3D; head-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        int nSize &#x3D; nums.size();</span><br><span class="line">        return toBuild(nums, 0, nSize - 1);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    TreeNode* toBuild(vector&lt;int&gt;&amp; nums, int start, int end)&#123;</span><br><span class="line">        if(start &gt; end) return NULL;</span><br><span class="line">        int rootIndex &#x3D; (start + end + 1) &#x2F; 2;</span><br><span class="line">        int root &#x3D; nums[rootIndex];</span><br><span class="line">        TreeNode* rootNode &#x3D; new TreeNode(root);</span><br><span class="line"></span><br><span class="line">        rootNode-&gt;left &#x3D; toBuild(nums, start, rootIndex - 1);</span><br><span class="line">        rootNode-&gt;right &#x3D; toBuild(nums, rootIndex + 1, end);</span><br><span class="line">        return rootNode;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（模拟中序遍历）："><a href="#代码实现（模拟中序遍历）：" class="headerlink" title="代码实现（模拟中序遍历）："></a>代码实现（模拟中序遍历）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>48 ms</td>
+<td>超过60.47%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>29.4 MB</td>
+<td>超过68.26%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * struct ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode *next;</span><br><span class="line"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    ListNode* rHead;</span><br><span class="line">    TreeNode* sortedListToBST(ListNode* head) &#123;</span><br><span class="line">        int lSize &#x3D; 0;</span><br><span class="line">        rHead &#x3D; head;</span><br><span class="line">        while(head)&#123;</span><br><span class="line">            head &#x3D; head-&gt;next;</span><br><span class="line">            lSize++;</span><br><span class="line">        &#125;</span><br><span class="line">        return toBuild(0, lSize - 1);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    TreeNode* toBuild(int start, int end)&#123;</span><br><span class="line">        if(start &gt; end) return NULL;</span><br><span class="line">        int mid &#x3D; (start + end + 1) &#x2F; 2;</span><br><span class="line">        TreeNode* left &#x3D; toBuild(start, mid - 1);</span><br><span class="line">        TreeNode* root &#x3D; new TreeNode(rHead-&gt;val);</span><br><span class="line">        rHead &#x3D; rHead-&gt;next;</span><br><span class="line">        root-&gt;left &#x3D; left;</span><br><span class="line">        root-&gt;right &#x3D; toBuild(mid + 1, end);</span><br><span class="line">        return root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="从前序与中序遍历序列构造二叉树-NO-105"><a href="#从前序与中序遍历序列构造二叉树-NO-105" class="headerlink" title="从前序与中序遍历序列构造二叉树 NO.105"></a>从前序与中序遍历序列构造二叉树 NO.105</h3><h5 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h5><p>根据一棵树的前序遍历与中序遍历构造二叉树。</p>
+<p>注意:<br>你可以假设树中没有重复的元素。</p>
+<h5 id="代码实现（递归）："><a href="#代码实现（递归）：" class="headerlink" title="代码实现（递归）："></a>代码实现（递归）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>20 ms</td>
+<td>超过89.41%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>17.7 MB</td>
+<td>超过52.17%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    map&lt;int, int&gt; inMap;</span><br><span class="line">    TreeNode* buildTree(vector&lt;int&gt;&amp; preorder, vector&lt;int&gt;&amp; inorder) &#123;</span><br><span class="line">        int preLen &#x3D; preorder.size();</span><br><span class="line">        int inLen &#x3D; inorder.size();</span><br><span class="line">        for(int i &#x3D; 0; i &lt; inLen; i++)&#123;</span><br><span class="line">            inMap[inorder[i]] &#x3D; i;</span><br><span class="line">        &#125;</span><br><span class="line">        return toBuild(preorder, 0, preLen - 1, 0, inLen - 1);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    TreeNode* toBuild(vector&lt;int&gt;&amp; preorder, int preLeft, int preRight, int inLeft, int inRight)&#123;</span><br><span class="line">        if(preLeft &gt; preRight || inLeft &gt; inRight) return NULL;</span><br><span class="line">        int root &#x3D; preorder[preLeft];</span><br><span class="line">        TreeNode *rootNode &#x3D; new TreeNode(root);</span><br><span class="line">        int pIndex &#x3D; inMap[root];</span><br><span class="line">        rootNode-&gt;left &#x3D; toBuild(preorder, preLeft + 1, preLeft + pIndex - inLeft, inLeft, pIndex - 1);</span><br><span class="line">        rootNode-&gt;right &#x3D; toBuild(preorder, preLeft + pIndex - inLeft + 1, preRight, pIndex + 1, inRight);</span><br><span class="line">        return rootNode;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="从中序与后序遍历序列构造二叉树-NO-106"><a href="#从中序与后序遍历序列构造二叉树-NO-106" class="headerlink" title="从中序与后序遍历序列构造二叉树 NO.106"></a>从中序与后序遍历序列构造二叉树 NO.106</h3><h5 id="题目描述：-2"><a href="#题目描述：-2" class="headerlink" title="题目描述："></a>题目描述：</h5><p>根据一棵树的中序遍历与后序遍历构造二叉树。</p>
+<p>注意:<br>你可以假设树中没有重复的元素。</p>
+<h5 id="代码实现（递归）：-1"><a href="#代码实现（递归）：-1" class="headerlink" title="代码实现（递归）："></a>代码实现（递归）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>24 ms</td>
+<td>超过78.96%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>18 MB</td>
+<td>超过26.03%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    map&lt;int ,int&gt; inMap;</span><br><span class="line">    TreeNode* buildTree(vector&lt;int&gt;&amp; inorder, vector&lt;int&gt;&amp; postorder) &#123;</span><br><span class="line">        int postLen &#x3D; postorder.size();</span><br><span class="line">        int inLen &#x3D; inorder.size();</span><br><span class="line">        for(int i &#x3D; 0; i &lt; inLen; i++)&#123;</span><br><span class="line">            inMap[inorder[i]] &#x3D; i;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return toBuild(postorder, 0, postLen - 1, 0, inLen - 1);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    TreeNode* toBuild(vector&lt;int&gt;&amp; postorder, int postLeft, int postRight, int inLeft, int inRight)&#123;</span><br><span class="line">        if(postLeft &gt; postRight || inLeft &gt; inRight) return NULL;</span><br><span class="line">        </span><br><span class="line">        int root &#x3D; postorder[postRight];</span><br><span class="line">        TreeNode* rootNode &#x3D; new TreeNode(root);</span><br><span class="line">        int pIndex &#x3D; inMap[root];</span><br><span class="line"></span><br><span class="line">        rootNode-&gt;left &#x3D; toBuild(postorder, postLeft, postLeft + pIndex - inLeft - 1, inLeft, pIndex - 1);</span><br><span class="line">        rootNode-&gt;right &#x3D; toBuild(postorder, postLeft + pIndex - inLeft, postRight - 1, pIndex + 1, inRight);</span><br><span class="line"></span><br><span class="line">        return rootNode;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h3 id="将有序数组转换为二叉搜索树-NO-108"><a href="#将有序数组转换为二叉搜索树-NO-108" class="headerlink" title="将有序数组转换为二叉搜索树 NO.108"></a>将有序数组转换为二叉搜索树 NO.108</h3><h5 id="题目描述：-3"><a href="#题目描述：-3" class="headerlink" title="题目描述："></a>题目描述：</h5><p>将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。</p>
+<p>本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。</p>
+<h5 id="代码实现（原创，递归）："><a href="#代码实现（原创，递归）：" class="headerlink" title="代码实现（原创，递归）："></a>代码实现（原创，递归）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>36 ms</td>
+<td>超过28.73%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>23.1 MB</td>
+<td>超过78.27%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    TreeNode* sortedArrayToBST(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int nSize &#x3D; nums.size();</span><br><span class="line">        return toBuild(nums, 0 , nSize - 1);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    TreeNode* toBuild(vector&lt;int&gt;&amp; nums, int start, int end)&#123;</span><br><span class="line">        if(start &gt; end) return NULL;</span><br><span class="line">        </span><br><span class="line">        int rootIndex &#x3D; (start + end) &#x2F; 2;</span><br><span class="line">        int root &#x3D; nums[rootIndex];</span><br><span class="line">        TreeNode* rootNode &#x3D; new TreeNode(root);</span><br><span class="line"></span><br><span class="line">        rootNode-&gt;left &#x3D; toBuild(nums, start, rootIndex - 1);</span><br><span class="line">        rootNode-&gt;right &#x3D; toBuild(nums, rootIndex + 1, end);</span><br><span class="line"></span><br><span class="line">        return rootNode;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/08/07/LeetCode-Dairy-XXIII/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXIII"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-07T07:07:26.000Z" title="2020-08-07T07:07:26.000Z">2020-08-07</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">7 分钟 读完 (大约 1078 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/08/07/LeetCode-Dairy-XXIII/">LeetCode Dairy XXIII</a></h1><div class="content"><h3 id="二叉树的锯齿形层次遍历-NO-103"><a href="#二叉树的锯齿形层次遍历-NO-103" class="headerlink" title="二叉树的锯齿形层次遍历 NO.103"></a>二叉树的锯齿形层次遍历 NO.103</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，返回其节点值的锯齿形层次遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。</p>
+<h5 id="代码实现（原创，栈）："><a href="#代码实现（原创，栈）：" class="headerlink" title="代码实现（原创，栈）："></a>代码实现（原创，栈）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>0 ms</td>
+<td>超过100 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>11.6 MB</td>
+<td>超过10.54 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; zigzagLevelOrder(TreeNode* root) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; ret;</span><br><span class="line">        stack&lt;TreeNode*&gt; nodeStore;</span><br><span class="line">        if(!root) return ret;</span><br><span class="line">        nodeStore.push(root);</span><br><span class="line">        bool direct &#x3D; 1; &#x2F;&#x2F;1: right to left; 0: left to right;</span><br><span class="line">        while(!nodeStore.empty())&#123;</span><br><span class="line">            int sSize &#x3D; nodeStore.size();</span><br><span class="line">            ret.push_back(vector&lt;int&gt;());</span><br><span class="line">            stack&lt;TreeNode*&gt; nodeTemp;</span><br><span class="line">            for(int i &#x3D; 0; i &lt; sSize; i++)&#123;</span><br><span class="line">                TreeNode* temp &#x3D; nodeStore.top();</span><br><span class="line">                nodeStore.pop();</span><br><span class="line">                ret.back().push_back(temp-&gt;val);</span><br><span class="line">                if(!direct)&#123;</span><br><span class="line">                    if(temp-&gt;right) nodeTemp.push(temp-&gt;right);</span><br><span class="line">                    if(temp-&gt;left) nodeTemp.push(temp-&gt;left);</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    if(temp-&gt;left) nodeTemp.push(temp-&gt;left);</span><br><span class="line">                    if(temp-&gt;right) nodeTemp.push(temp-&gt;right);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            direct &#x3D; !direct;</span><br><span class="line">            nodeStore &#x3D; nodeTemp;</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（原创，链表）："><a href="#代码实现（原创，链表）：" class="headerlink" title="代码实现（原创，链表）："></a>代码实现（原创，链表）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>4 ms</td>
+<td>超过74.16 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>11.7 MB</td>
+<td>超过10.54 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; zigzagLevelOrder(TreeNode* root) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; ret;</span><br><span class="line">        list&lt;TreeNode*&gt; nodeStore;</span><br><span class="line">        if(!root) return ret;</span><br><span class="line">        nodeStore.push_back(root);</span><br><span class="line">        bool direct &#x3D; 1;</span><br><span class="line">        while(!nodeStore.empty())&#123;</span><br><span class="line">            int sSize &#x3D; nodeStore.size();</span><br><span class="line">            ret.push_back(vector&lt;int&gt;());</span><br><span class="line">            for(int i &#x3D; 0; i &lt; sSize; i++)&#123;</span><br><span class="line">                if(direct)&#123;</span><br><span class="line">                    TreeNode* temp &#x3D; nodeStore.back();</span><br><span class="line">                    nodeStore.pop_back();</span><br><span class="line">                    ret.back().push_back(temp-&gt;val);</span><br><span class="line">                    if(temp-&gt;left) nodeStore.push_front(temp-&gt;left);</span><br><span class="line">                    if(temp-&gt;right) nodeStore.push_front(temp-&gt;right);</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    TreeNode* temp &#x3D; nodeStore.front();</span><br><span class="line">                    nodeStore.pop_front();</span><br><span class="line">                    ret.back().push_back(temp-&gt;val);</span><br><span class="line">                    if(temp-&gt;right) nodeStore.push_back(temp-&gt;right);</span><br><span class="line">                    if(temp-&gt;left) nodeStore.push_back(temp-&gt;left);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            direct &#x3D; !direct;</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="二叉树的最大深度-NO-104"><a href="#二叉树的最大深度-NO-104" class="headerlink" title="二叉树的最大深度 NO.104"></a>二叉树的最大深度 NO.104</h3><h5 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，找出其最大深度。</p>
+<p>二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。</p>
+<p>说明: 叶子节点是指没有子节点的节点。</p>
+<h5 id="代码实现（原创，递归）："><a href="#代码实现（原创，递归）：" class="headerlink" title="代码实现（原创，递归）："></a>代码实现（原创，递归）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>12 ms</td>
+<td>超过65.94 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>16.9 MB</td>
+<td>超过84.90 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int depthMax &#x3D; 0;</span><br><span class="line">    int maxDepth(TreeNode* root) &#123;</span><br><span class="line">        toDig(root, 0);</span><br><span class="line">        return depthMax;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    void toDig(TreeNode* root, int depth)&#123;</span><br><span class="line">        depthMax &#x3D; max(depth, depthMax);</span><br><span class="line">        if(!root) return;</span><br><span class="line">        toDig(root-&gt;left, depth + 1);</span><br><span class="line">        toDig(root-&gt;right, depth + 1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（简化）："><a href="#代码实现（简化）：" class="headerlink" title="代码实现（简化）："></a>代码实现（简化）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>16 ms</td>
+<td>超过30.79 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>17 MB</td>
+<td>超过52.97 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxDepth(TreeNode* root) &#123;</span><br><span class="line">        if(!root) return 0;</span><br><span class="line">        return max(maxDepth(root-&gt;left), maxDepth(root-&gt;right)) + 1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="二叉树的层次遍历-II-NO-107"><a href="#二叉树的层次遍历-II-NO-107" class="headerlink" title="二叉树的层次遍历 II NO.107"></a>二叉树的层次遍历 II NO.107</h3><h5 id="题目描述：-2"><a href="#题目描述：-2" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）。</p>
+<h5 id="代码实现（原创，逆置）："><a href="#代码实现（原创，逆置）：" class="headerlink" title="代码实现（原创，逆置）："></a>代码实现（原创，逆置）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>8 ms</td>
+<td>超过56.50 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>11.4 MB</td>
+<td>超过99.65 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; levelOrderBottom(TreeNode* root) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; ret;</span><br><span class="line">        queue&lt;TreeNode*&gt; nodeQ;</span><br><span class="line">        if(!root) return ret;</span><br><span class="line">        nodeQ.push(root);</span><br><span class="line">        while(!nodeQ.empty())&#123;</span><br><span class="line">            int nSize &#x3D; nodeQ.size();</span><br><span class="line">            ret.push_back(vector&lt;int&gt;());</span><br><span class="line">            for(int i &#x3D; 0; i &lt; nSize; i++)&#123;</span><br><span class="line">                TreeNode* node  &#x3D;  nodeQ.front(); nodeQ.pop();</span><br><span class="line">                ret.back().push_back(node-&gt;val);</span><br><span class="line">                if(node-&gt;left) nodeQ.push(node-&gt;left);</span><br><span class="line">                if(node-&gt;right) nodeQ.push(node-&gt;right);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(ret.begin(), ret.end());</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="二叉树的最小深度-NO-111"><a href="#二叉树的最小深度-NO-111" class="headerlink" title="二叉树的最小深度 NO.111"></a>二叉树的最小深度 NO.111</h3><h5 id="题目描述：-3"><a href="#题目描述：-3" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，找出其最小深度。</p>
+<p>最小深度是从根节点到最近叶子节点的最短路径上的节点数量。</p>
+<p>说明: 叶子节点是指没有子节点的节点。</p>
+<h5 id="代码实现（原创，递归）：-1"><a href="#代码实现（原创，递归）：-1" class="headerlink" title="代码实现（原创，递归）："></a>代码实现（原创，递归）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>16 ms</td>
+<td>超过53.02 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>17.5 MB</td>
+<td>超过34.05 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int depthMin &#x3D; 0;</span><br><span class="line">    int minDepth(TreeNode* root) &#123;</span><br><span class="line">        toDig(root, 0);</span><br><span class="line">        return depthMin;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    void toDig(TreeNode* root, int depth)&#123;</span><br><span class="line">        if(!root) return;</span><br><span class="line">        if(!root-&gt;left &amp;&amp; !root-&gt;right)&#123;</span><br><span class="line">            depthMin &#x3D; depthMin ? min(depthMin, depth + 1) : depth + 1;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        toDig(root-&gt;left, depth + 1);</span><br><span class="line">        toDig(root-&gt;right, depth + 1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（递归简化版）："><a href="#代码实现（递归简化版）：" class="headerlink" title="代码实现（递归简化版）："></a>代码实现（递归简化版）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>12 ms</td>
+<td>超过83.86 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>17.5 MB</td>
+<td>超过30.76 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int minDepth(TreeNode* root) &#123;</span><br><span class="line">        if(!root) return 0;</span><br><span class="line">        return (root-&gt;left &amp;&amp; root-&gt;right) ? min(minDepth(root-&gt;left), minDepth(root-&gt;right)) + 1 :</span><br><span class="line">                1 + minDepth(root-&gt;left) + minDepth(root-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/08/06/LeetCode-Dairy-XXII/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXII"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-06T05:44:59.000Z" title="2020-08-06T05:44:59.000Z">2020-08-06</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">3 分钟 读完 (大约 476 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/08/06/LeetCode-Dairy-XXII/">LeetCode Dairy XXII</a></h1><div class="content"><h3 id="对称二叉树-No-101"><a href="#对称二叉树-No-101" class="headerlink" title="对称二叉树 No.101"></a>对称二叉树 No.101</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，检查它是否是镜像对称的。</p>
+<h5 id="代码实现（原创，递归）："><a href="#代码实现（原创，递归）：" class="headerlink" title="代码实现（原创，递归）："></a>代码实现（原创，递归）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>8 ms</td>
+<td>超过47.24 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>12.3 MB</td>
+<td>超过91.99 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isSymmetric(TreeNode* root) &#123;</span><br><span class="line">        if(!root) return true;</span><br><span class="line">        return toVerify(root-&gt;left, root-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    bool toVerify(TreeNode* a, TreeNode* b)&#123;</span><br><span class="line">        if(!a &amp;&amp; !b) return true;</span><br><span class="line">        if(!a &amp;&amp; b || a &amp;&amp; !b) return false;</span><br><span class="line">        if(a-&gt;val !&#x3D; b-&gt;val) return false;</span><br><span class="line">        if(!toVerify(a-&gt;left, b-&gt;right)) return false; </span><br><span class="line">        return toVerify(a-&gt;right, b-&gt;left);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（原创，双指针同时反向遍历比较）："><a href="#代码实现（原创，双指针同时反向遍历比较）：" class="headerlink" title="代码实现（原创，双指针同时反向遍历比较）："></a>代码实现（原创，双指针同时反向遍历比较）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>4 ms</td>
+<td>超过87.45 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>12.9 MB</td>
+<td>超过6.44 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isSymmetric(TreeNode* root) &#123;</span><br><span class="line">        TreeNode* p &#x3D; root;</span><br><span class="line">        TreeNode* q &#x3D; root;</span><br><span class="line">        stack&lt;TreeNode*&gt; pStack;</span><br><span class="line">        stack&lt;TreeNode*&gt; qStack;</span><br><span class="line">        </span><br><span class="line">        while((p || !pStack.empty()) &amp;&amp; (q || !qStack.empty()))&#123;</span><br><span class="line">            if(p &amp;&amp; q)&#123;</span><br><span class="line">                if(p-&gt;val !&#x3D; q-&gt;val) return false;</span><br><span class="line">                pStack.push(p);</span><br><span class="line">                p &#x3D; p-&gt;left;</span><br><span class="line"></span><br><span class="line">                qStack.push(q);</span><br><span class="line">                q &#x3D; q-&gt;right;</span><br><span class="line">            &#125;</span><br><span class="line">            else if(!p &amp;&amp; !q)&#123;</span><br><span class="line">                p &#x3D; pStack.top();</span><br><span class="line">                pStack.pop();</span><br><span class="line">                p &#x3D; p-&gt;right;</span><br><span class="line"></span><br><span class="line">                q &#x3D; qStack.top();</span><br><span class="line">                qStack.pop();</span><br><span class="line">                q &#x3D; q-&gt;left;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(p || q || !pStack.empty() || !qStack.empty())&#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="二叉树的层序遍历-NO-102"><a href="#二叉树的层序遍历-NO-102" class="headerlink" title="二叉树的层序遍历 NO.102"></a>二叉树的层序遍历 NO.102</h3><h5 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。</p>
+<h5 id="代码实现（原创）："><a href="#代码实现（原创）：" class="headerlink" title="代码实现（原创）："></a>代码实现（原创）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>12 ms</td>
+<td>超过10.94 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>11.8 MB</td>
+<td>超过45.70 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; levelOrder(TreeNode* root) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; ret;</span><br><span class="line">        vector&lt;TreeNode*&gt; upNode;</span><br><span class="line">        if(!root)&#123;</span><br><span class="line">            return ret;</span><br><span class="line">        &#125; </span><br><span class="line">        ret.push_back(&#123;root-&gt;val&#125;);</span><br><span class="line">        upNode.push_back(root);</span><br><span class="line">        while(!upNode.empty())&#123;</span><br><span class="line">            vector&lt;int&gt; valTemp;</span><br><span class="line">            vector&lt;TreeNode*&gt; nodeTemp;</span><br><span class="line">            for(TreeNode* node : upNode)&#123;</span><br><span class="line">                if(node-&gt;left)</span><br><span class="line">                &#123;</span><br><span class="line">                    nodeTemp.push_back(node-&gt;left);</span><br><span class="line">                    valTemp.push_back(node-&gt;left-&gt;val);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                if(node-&gt;right)&#123;</span><br><span class="line">                    nodeTemp.push_back(node-&gt;right);</span><br><span class="line">                    valTemp.push_back(node-&gt;right-&gt;val);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            if(nodeTemp.empty()) break;</span><br><span class="line">            upNode &#x3D; nodeTemp;</span><br><span class="line">            ret.push_back(valTemp); </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/08/05/LeetCode-Dairy-XXI/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXI"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-05T05:58:51.000Z" title="2020-08-05T05:58:51.000Z">2020-08-05</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">7 分钟 读完 (大约 991 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/08/05/LeetCode-Dairy-XXI/">LeetCode Dairy XXI</a></h1><div class="content"><h3 id="不同的二叉搜索树-II-NO-95"><a href="#不同的二叉搜索树-II-NO-95" class="headerlink" title="不同的二叉搜索树 II NO.95"></a>不同的二叉搜索树 II NO.95</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个整数 n，生成所有由 1 … n 为节点所组成的 二叉搜索树。</p>
+<h5 id="代码实现（参考递归分治）："><a href="#代码实现（参考递归分治）：" class="headerlink" title="代码实现（参考递归分治）："></a>代码实现（参考递归分治）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>8 ms</td>
+<td>超过99.92%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>13.7 MB</td>
+<td>超过82.14 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;</span><br><span class="line"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;TreeNode*&gt; generateTrees(int n) &#123;</span><br><span class="line">        vector&lt;TreeNode*&gt; ret;</span><br><span class="line">        if(n &#x3D;&#x3D; 0) return ret;</span><br><span class="line">        ret &#x3D; getTree(1,n);</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    vector&lt;TreeNode*&gt; getTree(int start, int end)&#123;</span><br><span class="line">        vector&lt;TreeNode*&gt; ret;</span><br><span class="line">        if(start &gt; end)&#123;</span><br><span class="line">            ret.push_back(NULL);</span><br><span class="line">            return ret;</span><br><span class="line">        &#125;</span><br><span class="line">        if(start &#x3D;&#x3D; end)&#123;</span><br><span class="line">            TreeNode* root &#x3D; new TreeNode(start);</span><br><span class="line">            ret.push_back(root);</span><br><span class="line">            return ret;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        for(int i &#x3D; start; i &lt;&#x3D; end; i++)&#123;</span><br><span class="line">            vector&lt;TreeNode*&gt; leftTrees &#x3D; getTree(start, i - 1);</span><br><span class="line">            vector&lt;TreeNode*&gt; rightTrees &#x3D; getTree(i + 1, end);</span><br><span class="line">            for(TreeNode* left : leftTrees)&#123;</span><br><span class="line">                for(TreeNode* right : rightTrees)&#123;</span><br><span class="line">                    TreeNode* root &#x3D; new TreeNode(i);</span><br><span class="line">                    root-&gt;left &#x3D; left;</span><br><span class="line">                    root-&gt;right &#x3D; right;</span><br><span class="line">                    ret.push_back(root);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="不同的二叉搜索树-NO-96"><a href="#不同的二叉搜索树-NO-96" class="headerlink" title="不同的二叉搜索树 NO.96"></a>不同的二叉搜索树 NO.96</h3><h5 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个整数 n，求以 1 … n 为节点组成的二叉搜索树有多少种？</p>
+<h5 id="代码实现（参考递归分治方式）："><a href="#代码实现（参考递归分治方式）：" class="headerlink" title="代码实现（参考递归分治方式）："></a>代码实现（参考递归分治方式）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>0 ms</td>
+<td>超过100 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>5.8 MB</td>
+<td>超过100 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int numTrees(int n) &#123;</span><br><span class="line">        int count[n + 1];</span><br><span class="line">        memset(count, 0, sizeof(int) * (n + 1));</span><br><span class="line">        count[0] &#x3D; 1;</span><br><span class="line">        count[1] &#x3D; 1;</span><br><span class="line">        for(int i &#x3D; 2; i &lt;&#x3D;n ; i++)&#123;</span><br><span class="line">            for(int j &#x3D; 1; j &lt;&#x3D;i ; j++)&#123;</span><br><span class="line">                count[i] +&#x3D; count[j - 1] * count[i - j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return count[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="验证二叉搜索树-NO-98"><a href="#验证二叉搜索树-NO-98" class="headerlink" title="验证二叉搜索树 NO.98"></a>验证二叉搜索树 NO.98</h3><h5 id="题目描述：-2"><a href="#题目描述：-2" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，判断其是否是一个有效的二叉搜索树。</p>
+<p>假设一个二叉搜索树具有如下特征：</p>
+<p>节点的左子树只包含小于当前节点的数。<br>节点的右子树只包含大于当前节点的数。<br>所有左子树和右子树自身必须也是二叉搜索树。</p>
+<h5 id="代码实现（原创，二叉搜索树中序遍历升序）："><a href="#代码实现（原创，二叉搜索树中序遍历升序）：" class="headerlink" title="代码实现（原创，二叉搜索树中序遍历升序）："></a>代码实现（原创，二叉搜索树中序遍历升序）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>12 ms</td>
+<td>超过92 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>18.5 MB</td>
+<td>超过22.44 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isValidBST(TreeNode* root) &#123;</span><br><span class="line">        stack&lt;TreeNode*&gt; rootStack;</span><br><span class="line">        int flag &#x3D; 0;</span><br><span class="line">        int lastNum;</span><br><span class="line"></span><br><span class="line">        while(root || !rootStack.empty())&#123;</span><br><span class="line">            if(root)&#123;</span><br><span class="line">                rootStack.push(root);</span><br><span class="line">                root &#x3D; root-&gt;left;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                root &#x3D; rootStack.top();</span><br><span class="line">                rootStack.pop();</span><br><span class="line">                if(flag)&#123;</span><br><span class="line">                    if(root-&gt;val &lt;&#x3D; lastNum) return false;</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    flag &#x3D; 1;</span><br><span class="line">                &#125;</span><br><span class="line">                lastNum &#x3D; root-&gt;val;</span><br><span class="line">                </span><br><span class="line">                root &#x3D; root-&gt;right;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（原创，递归）："><a href="#代码实现（原创，递归）：" class="headerlink" title="代码实现（原创，递归）："></a>代码实现（原创，递归）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>20 ms</td>
+<td>超过35.38%用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>18.2 MB</td>
+<td>超过61.68%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool flag;</span><br><span class="line">    int lastNum;</span><br><span class="line">    bool isValidBST(TreeNode* root) &#123;</span><br><span class="line">        if(!root) return true;</span><br><span class="line">        if(!isValidBST(root-&gt;left)) return false; </span><br><span class="line">        if(flag &amp;&amp; root-&gt;val &lt;&#x3D; lastNum) return false;</span><br><span class="line">        flag &#x3D; 1;</span><br><span class="line">        lastNum &#x3D; root-&gt;val;</span><br><span class="line">        if(!isValidBST(root-&gt;right)) return false;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="相同的树-NO-100"><a href="#相同的树-NO-100" class="headerlink" title="相同的树 NO.100"></a>相同的树 NO.100</h3><h5 id="题目描述：-3"><a href="#题目描述：-3" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定两个二叉树，编写一个函数来检验它们是否相同。</p>
+<p>如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。</p>
+<h5 id="代码实现（原创，遍历比较）："><a href="#代码实现（原创，遍历比较）：" class="headerlink" title="代码实现（原创，遍历比较）："></a>代码实现（原创，遍历比较）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>20 ms</td>
+<td>超过100 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>10.5 MB</td>
+<td>超过5.15%用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;</span><br><span class="line"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isSameTree(TreeNode* p, TreeNode* q) &#123;</span><br><span class="line">        stack&lt;TreeNode*&gt; pStack;</span><br><span class="line">        stack&lt;TreeNode*&gt; qStack;</span><br><span class="line">         </span><br><span class="line">        while((p || !pStack.empty()) &amp;&amp; (q || !qStack.empty()))&#123;</span><br><span class="line">            int pVal, qVal;</span><br><span class="line">            if(p &amp;&amp; q)&#123;</span><br><span class="line">                if(p-&gt;val !&#x3D; q-&gt;val)&#123;</span><br><span class="line">                    return false;</span><br><span class="line">                &#125;</span><br><span class="line">                pStack.push(p);</span><br><span class="line">                p &#x3D; p-&gt;left;</span><br><span class="line"></span><br><span class="line">                qStack.push(q);</span><br><span class="line">                q &#x3D; q-&gt;left;</span><br><span class="line">            &#125;</span><br><span class="line">             else if(!p &amp;&amp; !q)&#123;</span><br><span class="line">                p &#x3D; pStack.top();</span><br><span class="line">                pStack.pop();</span><br><span class="line">                p &#x3D; p-&gt;right;</span><br><span class="line"></span><br><span class="line">                q &#x3D; qStack.top();</span><br><span class="line">                qStack.pop();</span><br><span class="line">                q &#x3D; q-&gt;right;</span><br><span class="line">            &#125;</span><br><span class="line">             else&#123;</span><br><span class="line">                 return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        if(p || !pStack.empty() || q || !qStack.empty()) return false;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="代码实现（递归比较）："><a href="#代码实现（递归比较）：" class="headerlink" title="代码实现（递归比较）："></a>代码实现（递归比较）：</h5><table>
+<thead>
+<tr>
+<th>执行结果</th>
+<th>用量</th>
+<th>排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用时</td>
+<td>4ms</td>
+<td>超过47.59 %用户</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>9.8 MB</td>
+<td>超过96.10 %用户</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;</span><br><span class="line"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isSameTree(TreeNode* p, TreeNode* q) &#123;</span><br><span class="line">        if(!p &amp;&amp; !q) return true;</span><br><span class="line">        if(!p &amp;&amp; q || p &amp;&amp; !q) return false;</span><br><span class="line">        if(p-&gt;val !&#x3D; q-&gt;val) return false;</span><br><span class="line">        if(!isSameTree(p-&gt;left, q-&gt;left)) return false;</span><br><span class="line">        return isSameTree(p-&gt;right, q-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/08/03/LeetCode-Dairy-XX/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XX"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-03T06:04:12.000Z" title="2020-08-03T06:04:12.000Z">2020-08-03</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">6 分钟 读完 (大约 903 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/08/03/LeetCode-Dairy-XX/">LeetCode Dairy XX</a></h1><div class="content"><h3 id="二叉树的中序遍历-NO-94"><a href="#二叉树的中序遍历-NO-94" class="headerlink" title="二叉树的中序遍历 NO.94"></a>二叉树的中序遍历 NO.94</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个二叉树，返回它的<em>中序</em> 遍历。</p>
 <h5 id="代码实现（原创，递归）："><a href="#代码实现（原创，递归）：" class="headerlink" title="代码实现（原创，递归）："></a>代码实现（原创，递归）：</h5><table>
 <thead>
 <tr>
@@ -872,562 +1407,7 @@
 </tbody></table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void merge(vector&lt;int&gt;&amp; nums1, int m, vector&lt;int&gt;&amp; nums2, int n) &#123;</span><br><span class="line">        int n1 &#x3D; m - 1;</span><br><span class="line">        int n2 &#x3D; n - 1;</span><br><span class="line">        int count &#x3D; m + n - 1;</span><br><span class="line">        while(n1 &gt;&#x3D; 0 || n2 &gt;&#x3D; 0)&#123;</span><br><span class="line">            if(n1 &gt;&#x3D; 0 &amp;&amp; n2 &gt;&#x3D; 0)&#123;</span><br><span class="line">                if(nums1[n1] &gt; nums2[n2])&#123;</span><br><span class="line">                    nums1[count] &#x3D; nums1[n1];</span><br><span class="line">                    n1--;</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    nums1[count] &#x3D; nums2[n2];</span><br><span class="line">                    n2--;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                if(n1 &gt;&#x3D; 0)&#123;</span><br><span class="line">                    nums1[count] &#x3D; nums1[n1];</span><br><span class="line">                    n1--;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                if(n2 &gt;&#x3D; 0)&#123;</span><br><span class="line">                    nums1[count] &#x3D; nums2[n2];</span><br><span class="line">                    n2--;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            count--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/07/23/LeetCode-Dairy-XIV/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XIV"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-23T05:57:40.000Z" title="2020-07-23T05:57:40.000Z">2020-07-23</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">6 分钟 读完 (大约 850 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/23/LeetCode-Dairy-XIV/">LeetCode Dairy XIV</a></h1><div class="content"><h3 id="第k个排列-NO-60"><a href="#第k个排列-NO-60" class="headerlink" title="第k个排列 NO.60"></a>第k个排列 NO.60</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。</p>
-<p>按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：</p>
-<p>“123”<br>“132”<br>“213”<br>“231”<br>“312”<br>“321”<br>给定 n 和 k，返回第 k 个排列。</p>
-<p>说明：</p>
-<p>给定 n 的范围是 [1, 9]。<br>给定 k 的范围是[1,  n!]。</p>
-<h5 id="代码实现（原创，根据序号，每次查找开头数字）："><a href="#代码实现（原创，根据序号，每次查找开头数字）：" class="headerlink" title="代码实现（原创，根据序号，每次查找开头数字）："></a>代码实现（原创，根据序号，每次查找开头数字）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0 ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6 MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string getPermutation(int n, int k) &#123;</span><br><span class="line">        if(n &#x3D;&#x3D; 0) return &quot;&quot;;</span><br><span class="line">        string cur &#x3D; &quot;&quot;;</span><br><span class="line">        int factorialStore[n + 1];</span><br><span class="line">        int factorial &#x3D; 1;</span><br><span class="line">        vector&lt;int&gt; nums(n, 0);</span><br><span class="line">        int toFind &#x3D; k - 1;</span><br><span class="line">        for(int i &#x3D; 1; i &lt; n + 1; i++)&#123;</span><br><span class="line">            factorial *&#x3D; i;</span><br><span class="line">            factorialStore[i] &#x3D; factorial;</span><br><span class="line">            nums[i - 1] &#x3D; i;</span><br><span class="line">        &#125;</span><br><span class="line">        int count &#x3D; 0;</span><br><span class="line">        while(count !&#x3D; n)&#123;</span><br><span class="line">            int index &#x3D; toFind &#x2F; factorialStore[n - 1 - count];</span><br><span class="line">            toFind &#x3D; toFind % factorialStore[n - 1 -count];</span><br><span class="line">            cur.push_back(nums[index] + &#39;0&#39;);</span><br><span class="line">            nums.erase(nums.begin() + index);</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        return cur;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="旋转链表-NO-61"><a href="#旋转链表-NO-61" class="headerlink" title="旋转链表 NO.61"></a>旋转链表 NO.61</h3><h5 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。</p>
-<p>示例 1:</p>
-<p>输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL, k = 2<br>输出: 4-&gt;5-&gt;1-&gt;2-&gt;3-&gt;NULL<br>解释:<br>向右旋转 1 步: 5-&gt;1-&gt;2-&gt;3-&gt;4-&gt;NULL<br>向右旋转 2 步: 4-&gt;5-&gt;1-&gt;2-&gt;3-&gt;NULL<br>示例 2:</p>
-<p>输入: 0-&gt;1-&gt;2-&gt;NULL, k = 4<br>输出: 2-&gt;0-&gt;1-&gt;NULL<br>解释:<br>向右旋转 1 步: 2-&gt;0-&gt;1-&gt;NULL<br>向右旋转 2 步: 1-&gt;2-&gt;0-&gt;NULL<br>向右旋转 3 步: 0-&gt;1-&gt;2-&gt;NULL<br>向右旋转 4 步: 2-&gt;0-&gt;1-&gt;NULL</p>
-<h5 id="代码实现（原创）："><a href="#代码实现（原创）：" class="headerlink" title="代码实现（原创）："></a>代码实现（原创）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>8 ms</td>
-<td>超过94.62%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>7.4 MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * struct ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode *next;</span><br><span class="line"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    ListNode* rotateRight(ListNode* head, int k) &#123;</span><br><span class="line">        if(head &#x3D;&#x3D; NULL) return NULL;</span><br><span class="line">        if(head-&gt;next &#x3D;&#x3D; NULL) return head;</span><br><span class="line">        ListNode* pre &#x3D; new ListNode(1);</span><br><span class="line">        pre-&gt;next &#x3D; head;</span><br><span class="line">        ListNode* front &#x3D; pre;</span><br><span class="line">        ListNode* behind &#x3D; pre;</span><br><span class="line">        int step &#x3D; 0;</span><br><span class="line">        int moved &#x3D; 0;</span><br><span class="line">        while(1)&#123;</span><br><span class="line">            if(k &#x3D;&#x3D; 0) break;</span><br><span class="line">            if(step &gt; 0 &amp;&amp; behind-&gt;next &#x3D;&#x3D; NULL)&#123;</span><br><span class="line">                if(moved)&#123;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    k &#x3D; k % step;</span><br><span class="line">                    step &#x3D; 0;</span><br><span class="line">                    front &#x3D; pre;</span><br><span class="line">                    behind &#x3D; pre;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            behind &#x3D; behind-&gt;next;</span><br><span class="line">            if(step &gt;&#x3D; k)&#123;</span><br><span class="line">                front &#x3D; front-&gt;next;</span><br><span class="line">                moved &#x3D; 1;</span><br><span class="line">            &#125;</span><br><span class="line">            step++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        ListNode *newHead &#x3D; front-&gt;next;</span><br><span class="line">        front-&gt;next &#x3D; NULL;</span><br><span class="line">        behind-&gt;next &#x3D; head;</span><br><span class="line">        delete(pre);</span><br><span class="line">        return newHead;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="不同路径-NO-62"><a href="#不同路径-NO-62" class="headerlink" title="不同路径 NO.62"></a>不同路径 NO.62</h3><h5 id="题目描述：-2"><a href="#题目描述：-2" class="headerlink" title="题目描述："></a>题目描述：</h5><p>一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。</p>
-<p>机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。</p>
-<p>问总共有多少条不同的路径？</p>
-<h5 id="代码实现（原创，排列组合）："><a href="#代码实现（原创，排列组合）：" class="headerlink" title="代码实现（原创，排列组合）："></a>代码实现（原创，排列组合）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0 ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6 MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int uniquePaths(int m, int n) &#123;</span><br><span class="line">        m--;</span><br><span class="line">        n--;</span><br><span class="line">        long long possible &#x3D; 1;</span><br><span class="line">        for(int i &#x3D; 0; i &lt; n; i++)&#123;</span><br><span class="line">            possible &#x3D; possible * (++m);</span><br><span class="line">            possible &#x3D; possible &#x2F; (i+1);</span><br><span class="line">        &#125;        </span><br><span class="line">        return possible;     </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="代码实现（参考动态方程）："><a href="#代码实现（参考动态方程）：" class="headerlink" title="代码实现（参考动态方程）："></a>代码实现（参考动态方程）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0 ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>5.9 MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int uniquePaths(int m, int n) &#123;</span><br><span class="line">        int dp[m][n];</span><br><span class="line">        for(int i &#x3D; 0; i &lt; m; i++)&#123;</span><br><span class="line">            for(int j &#x3D; 0; j &lt; n; j++)&#123;</span><br><span class="line">                if(i &#x3D;&#x3D; 0 || j &#x3D;&#x3D; 0)&#123;</span><br><span class="line">                    dp[i][j] &#x3D; 1;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                dp[i][j] &#x3D; dp[i - 1][j] + dp[i][j - 1];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return dp[m - 1][n - 1];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="二进制求和-NO-67"><a href="#二进制求和-NO-67" class="headerlink" title="二进制求和 NO.67"></a>二进制求和 NO.67</h3><h5 id="题目描述：-3"><a href="#题目描述：-3" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给你两个二进制字符串，返回它们的和（用二进制表示）。</p>
-<p>输入为 非空 字符串且只包含数字 1 和 0。</p>
-<p>示例 1:</p>
-<p>输入: a = “11”, b = “1”<br>输出: “100”</p>
-<h5 id="代码实现（原创）：-1"><a href="#代码实现（原创）：-1" class="headerlink" title="代码实现（原创）："></a>代码实现（原创）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0 ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6.5 MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string addBinary(string a, string b) &#123;</span><br><span class="line">        int aSize &#x3D; a.size();</span><br><span class="line">        int bSize &#x3D; b.size();</span><br><span class="line"></span><br><span class="line">        int aIndex &#x3D; aSize - 1;</span><br><span class="line">        int bIndex &#x3D; bSize - 1;</span><br><span class="line">        string ret &#x3D; &quot;&quot;;</span><br><span class="line">        char up &#x3D; 0;</span><br><span class="line">        while(aIndex &gt;&#x3D; 0 || bIndex &gt;&#x3D; 0)&#123;</span><br><span class="line">            char n1 &#x3D; 0;</span><br><span class="line">            char n2 &#x3D; 0;</span><br><span class="line">            if(aIndex &gt;&#x3D; 0)&#123;</span><br><span class="line">                n1 &#x3D; a[aIndex] - &#39;0&#39;;</span><br><span class="line">                aIndex--;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            if(bIndex &gt;&#x3D; 0)&#123;</span><br><span class="line">                n2 &#x3D; b[bIndex] - &#39;0&#39;;</span><br><span class="line">                bIndex--;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            char sum &#x3D; n1 + n2 + up;</span><br><span class="line">            ret.push_back(sum % 2 + &#39;0&#39;);</span><br><span class="line">            up &#x3D; sum &#x2F; 2;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(up)&#123;</span><br><span class="line">            ret.push_back(&#39;1&#39;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        reverse(ret.begin(), ret.end());</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/07/22/LeetCode-Dairy-XIII/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XIII"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-22T04:19:57.000Z" title="2020-07-22T04:19:57.000Z">2020-07-22</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">8 分钟 读完 (大约 1239 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/22/LeetCode-Dairy-XIII/">LeetCode Dairy XIII</a></h1><div class="content"><h3 id="跳跃游戏-NO-55"><a href="#跳跃游戏-NO-55" class="headerlink" title="跳跃游戏 NO.55"></a>跳跃游戏 NO.55</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个非负整数数组，你最初位于数组的第一个位置。</p>
-<p>数组中的每个元素代表你在该位置可以跳跃的最大长度。</p>
-<p>判断你是否能够到达最后一个位置。</p>
-<p>示例 1:</p>
-<p>输入: [2,3,1,1,4]<br>输出: true<br>解释: 我们可以先跳 1 步，从位置 0 到达 位置 1, 然后再从位置 1 跳 3 步到达最后一个位置</p>
-<h5 id="代码实现（原创）："><a href="#代码实现（原创）：" class="headerlink" title="代码实现（原创）："></a>代码实现（原创）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>40ms</td>
-<td>超过6.31%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>13MB</td>
-<td>超过8.70%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool canJump(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int nSize &#x3D; nums.size();</span><br><span class="line">        if(!nSize) return true;</span><br><span class="line">        if(nSize &#x3D;&#x3D; 1) return true;</span><br><span class="line">        </span><br><span class="line">        int arrive_pos &#x3D; nSize - 1;</span><br><span class="line"></span><br><span class="line">        for(int i &#x3D; nSize - 2; i &gt;&#x3D; 0;i--)&#123;</span><br><span class="line">            int distance &#x3D; arrive_pos - i;</span><br><span class="line">            if(nums[i] &gt;&#x3D; distance)&#123;</span><br><span class="line">                arrive_pos &#x3D; i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(arrive_pos &#x3D;&#x3D; 0)&#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="代码实现（参考贪心算法思想）："><a href="#代码实现（参考贪心算法思想）：" class="headerlink" title="代码实现（参考贪心算法思想）："></a>代码实现（参考贪心算法思想）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>28ms</td>
-<td>超过19.63%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>12.8MB</td>
-<td>超过8.70%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool canJump(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int nSize &#x3D; nums.size();</span><br><span class="line">        int max_step &#x3D; 0;</span><br><span class="line">        for(int i &#x3D; 0;i &lt; nSize; i++)&#123;</span><br><span class="line">            if(i &gt; max_step)&#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">            max_step &#x3D; max(max_step , i + nums[i]);</span><br><span class="line">            if(max_step &gt;&#x3D; nSize - 1) return true; </span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="合并区间-NO-56"><a href="#合并区间-NO-56" class="headerlink" title="合并区间 NO.56"></a>合并区间 NO.56</h3><h5 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给出一个区间的集合，请合并所有重叠的区间。</p>
-<p>示例 1:</p>
-<p>输入: [[1,3],[2,6],[8,10],[15,18]]<br>输出: [[1,6],[8,10],[15,18]]<br>解释: 区间 [1,3] 和 [2,6] 重叠, 将它们合并为 [1,6].</p>
-<h5 id="代码实现（原创，排序后，暴力法）："><a href="#代码实现（原创，排序后，暴力法）：" class="headerlink" title="代码实现（原创，排序后，暴力法）："></a>代码实现（原创，排序后，暴力法）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>92ms</td>
-<td>超过12.41%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>14.9MB</td>
-<td>超过28.21%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; merge(vector&lt;vector&lt;int&gt;&gt;&amp; intervals) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; ret;</span><br><span class="line">        int iSize &#x3D; intervals.size();</span><br><span class="line">        if(!iSize) return &#123;&#125;;</span><br><span class="line">        if(iSize &#x3D;&#x3D; 1) return intervals;</span><br><span class="line">        char map[iSize];</span><br><span class="line">        memset(map, 0, iSize);</span><br><span class="line">        sort(intervals.begin(), intervals.end());</span><br><span class="line">        for(int i &#x3D; 0; i &lt; iSize; i++)&#123;</span><br><span class="line">            if(map[i]) continue;</span><br><span class="line">            vector&lt;int&gt; seed &#x3D; intervals[i];</span><br><span class="line">            for(int j &#x3D; i + 1; j &lt; iSize; j++)&#123;</span><br><span class="line">                if(map[j]) continue;</span><br><span class="line">                vector&lt;int&gt; mergeResult &#x3D; mergeTwo(seed, intervals[j]);</span><br><span class="line">                if(mergeResult.size())&#123;</span><br><span class="line">                    map[j] &#x3D; 1;</span><br><span class="line">                    seed &#x3D; mergeResult;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            ret.push_back(seed);</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    vector&lt;int&gt; mergeTwo(vector&lt;int&gt; a, vector&lt;int&gt; b)&#123;</span><br><span class="line">        vector&lt;int&gt; ret;</span><br><span class="line">        int a_left &#x3D; a[0];</span><br><span class="line">        int a_right &#x3D; a[1];</span><br><span class="line">        int b_left &#x3D; b[0];</span><br><span class="line">        int b_right &#x3D; b[1];</span><br><span class="line">        </span><br><span class="line">        if(a_left &gt;&#x3D; b_left &amp;&amp; a_left &lt;&#x3D; b_right)&#123;</span><br><span class="line">            int c_left &#x3D; b_left;</span><br><span class="line">            int c_right &#x3D; max(b_right, a_right);</span><br><span class="line">            ret.push_back(c_left);</span><br><span class="line">            ret.push_back(c_right);</span><br><span class="line">            return ret;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(b_left &gt;&#x3D; a_left &amp;&amp; b_left &lt;&#x3D; a_right)&#123;</span><br><span class="line">            int c_left &#x3D; a_left;</span><br><span class="line">            int c_right &#x3D; max(b_right, a_right);</span><br><span class="line">            ret.push_back(c_left);</span><br><span class="line">            ret.push_back(c_right);</span><br><span class="line">            return ret;</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="代码实现（参考双指针方法）："><a href="#代码实现（参考双指针方法）：" class="headerlink" title="代码实现（参考双指针方法）："></a>代码实现（参考双指针方法）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>48ms</td>
-<td>超过49.71%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>10.7MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; merge(vector&lt;vector&lt;int&gt;&gt;&amp; intervals) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; ret;</span><br><span class="line">        sort(intervals.begin(), intervals.end());</span><br><span class="line">        int iSize &#x3D; intervals.size();</span><br><span class="line">        if(!iSize) return &#123;&#125;;</span><br><span class="line">        if(1 &#x3D;&#x3D; iSize) return intervals;</span><br><span class="line"></span><br><span class="line">        int start &#x3D; intervals[0][0];</span><br><span class="line">        int end &#x3D; intervals[0][1];</span><br><span class="line">        </span><br><span class="line">        for(int i &#x3D; 1; i &lt; iSize; i++)&#123;</span><br><span class="line">            int temp_start &#x3D; intervals[i][0];</span><br><span class="line">            int temp_end &#x3D; intervals[i][1];</span><br><span class="line">            if(end &gt;&#x3D; temp_start)&#123;</span><br><span class="line">                if(end &lt; temp_end)&#123;</span><br><span class="line">                    end &#x3D; temp_end;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                vector&lt;int&gt; temp;</span><br><span class="line">                temp.push_back(start);</span><br><span class="line">                temp.push_back(end);</span><br><span class="line">                ret.push_back(temp);</span><br><span class="line"></span><br><span class="line">                start &#x3D; intervals[i][0];</span><br><span class="line">                end &#x3D; intervals[i][1];</span><br><span class="line">            &#125;</span><br><span class="line">            if(i &#x3D;&#x3D; iSize - 1)&#123;</span><br><span class="line">                vector&lt;int&gt; temp;</span><br><span class="line">                temp.push_back(start);</span><br><span class="line">                temp.push_back(end);</span><br><span class="line">                ret.push_back(temp);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="最后一个单词的长度-NO-58"><a href="#最后一个单词的长度-NO-58" class="headerlink" title="最后一个单词的长度 NO.58"></a>最后一个单词的长度 NO.58</h3><h5 id="题目描述：-2"><a href="#题目描述：-2" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个仅包含大小写字母和空格 ‘ ‘ 的字符串 s，返回其最后一个单词的长度。如果字符串从左向右滚动显示，那么最后一个单词就是最后出现的单词。</p>
-<p>如果不存在最后一个单词，请返回 0 。</p>
-<p>说明：一个单词是指仅由字母组成、不包含任何空格字符的 最大子字符串。</p>
-<h5 id="代码实现（原创）：-1"><a href="#代码实现（原创）：-1" class="headerlink" title="代码实现（原创）："></a>代码实现（原创）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6.7 MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int lengthOfLastWord(string s) &#123;</span><br><span class="line">        int sSize &#x3D; s.size();</span><br><span class="line">        int count &#x3D; 0;</span><br><span class="line">        for(int i &#x3D; sSize - 1; i &gt;&#x3D; 0; i--)&#123;</span><br><span class="line">            if(s[i] &#x3D;&#x3D; &#39; &#39;)&#123;</span><br><span class="line">                if(count)&#123;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        return count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="螺旋矩阵-II-NO-59"><a href="#螺旋矩阵-II-NO-59" class="headerlink" title="螺旋矩阵 II NO.59"></a>螺旋矩阵 II NO.59</h3><h5 id="题目描述：-3"><a href="#题目描述：-3" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个正整数 n，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。</p>
-<p>示例:</p>
-<p>输入: 3<br>输出:<br>[<br> [ 1, 2, 3 ],<br> [ 8, 9, 4 ],<br> [ 7, 6, 5 ]<br>]</p>
-<h5 id="代码实现（参考上下左右边界缩减思想）："><a href="#代码实现（参考上下左右边界缩减思想）：" class="headerlink" title="代码实现（参考上下左右边界缩减思想）："></a>代码实现（参考上下左右边界缩减思想）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6.9 MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; generateMatrix(int n) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; matrix(n, vector&lt;int&gt;(n));</span><br><span class="line"></span><br><span class="line">        int up &#x3D; 0;</span><br><span class="line">        int down &#x3D; n - 1;</span><br><span class="line">        int left &#x3D; 0;</span><br><span class="line">        int right &#x3D; n - 1;</span><br><span class="line">        int cur &#x3D; 1;</span><br><span class="line"></span><br><span class="line">        while(1)&#123;</span><br><span class="line">            for(int i &#x3D; left; i &lt;&#x3D; right; i++)&#123;</span><br><span class="line">                matrix[up][i] &#x3D; cur;</span><br><span class="line">                cur++;</span><br><span class="line">            &#125;</span><br><span class="line">            if(++up &gt; down) break;</span><br><span class="line">            </span><br><span class="line">            for(int i &#x3D; up; i &lt;&#x3D; down; i++)&#123;</span><br><span class="line">                matrix[i][right] &#x3D; cur;</span><br><span class="line">                cur++;</span><br><span class="line">            &#125;</span><br><span class="line">            if(--right &lt; left) break;</span><br><span class="line"></span><br><span class="line">            for(int i &#x3D; right; i &gt;&#x3D; left; i--)&#123;</span><br><span class="line">                matrix[down][i] &#x3D; cur;</span><br><span class="line">                cur++;</span><br><span class="line">            &#125;</span><br><span class="line">            if(--down &lt; up) break;</span><br><span class="line"></span><br><span class="line">            for(int i &#x3D; down; i &gt;&#x3D; up; i--)&#123;</span><br><span class="line">                matrix[i][left] &#x3D; cur;</span><br><span class="line">                cur++;</span><br><span class="line">            &#125;</span><br><span class="line">            if(++left &gt; right) break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return matrix;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="加一-NO-66"><a href="#加一-NO-66" class="headerlink" title="加一 NO.66"></a>加一 NO.66</h3><h5 id="题目描述：-4"><a href="#题目描述：-4" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。</p>
-<p>最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。</p>
-<p>你可以假设除了整数 0 之外，这个整数不会以零开头。</p>
-<p>示例 1:</p>
-<p>输入: [1,2,3]<br>输出: [1,2,4]<br>解释: 输入数组表示数字 123。</p>
-<h5 id="代码实现（原创）：-2"><a href="#代码实现（原创）：-2" class="headerlink" title="代码实现（原创）："></a>代码实现（原创）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>9 MB</td>
-<td>超过5.88%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; plusOne(vector&lt;int&gt;&amp; digits) &#123;</span><br><span class="line">        int dSize &#x3D; digits.size();</span><br><span class="line"></span><br><span class="line">        reverse(digits.begin(), digits.end());</span><br><span class="line">        int up &#x3D; 1;</span><br><span class="line">        for(int i &#x3D; 0; i &lt; dSize; i++)&#123;</span><br><span class="line">            if(!up) break; </span><br><span class="line">            int sum &#x3D; up + digits[i];</span><br><span class="line">            digits[i] &#x3D; sum % 10;</span><br><span class="line">            up &#x3D; sum &#x2F; 10;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(up)&#123;</span><br><span class="line">            digits.push_back(1);</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(digits.begin(), digits.end());</span><br><span class="line">        return digits;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/07/20/LeetCode-Dairy-XII/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XII"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-20T13:14:20.000Z" title="2020-07-20T13:14:20.000Z">2020-07-20</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">8 分钟 读完 (大约 1235 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/20/LeetCode-Dairy-XII/">LeetCode Dairy XII</a></h1><div class="content"><h3 id="两数相除-NO-29"><a href="#两数相除-NO-29" class="headerlink" title="两数相除 NO.29"></a>两数相除 NO.29</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。</p>
-<p>返回被除数 dividend 除以除数 divisor 得到的商。</p>
-<p>整数除法的结果应当截去（truncate）其小数部分，例如：truncate(8.345) = 8 以及 truncate(-2.7335) = -2</p>
-<p>假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−2^31,  2^31 − 1]。本题中，如果除法结果溢出，则返回 2^31 − 1。</p>
-<h5 id="代码实现（原创，将被除数和除数都转换成负数，防止越界，c-负数不能左移，先转换成无符号整型）："><a href="#代码实现（原创，将被除数和除数都转换成负数，防止越界，c-负数不能左移，先转换成无符号整型）：" class="headerlink" title="代码实现（原创，将被除数和除数都转换成负数，防止越界，c++ 负数不能左移，先转换成无符号整型）："></a>代码实现（原创，将被除数和除数都转换成负数，防止越界，c++ 负数不能左移，先转换成无符号整型）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>4ms</td>
-<td>超过60.71%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>5.8MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int divide(int dividend, int divisor) &#123;</span><br><span class="line">        int sign &#x3D; 1;</span><br><span class="line">        int ret &#x3D; 0;</span><br><span class="line">        if(divisor &lt; 0)&#123;</span><br><span class="line">            sign &#x3D; 0 - sign;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            divisor &#x3D; 0 - divisor;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(dividend &lt; 0)&#123;</span><br><span class="line">            sign &#x3D; 0 - sign;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">           dividend &#x3D; 0 - dividend;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        int end &#x3D; dividend;</span><br><span class="line">        int seed &#x3D; divisor;</span><br><span class="line">        int count &#x3D; 0;</span><br><span class="line">        int overflow &#x3D; 0;</span><br><span class="line">        while( seed &gt;&#x3D; end)&#123;</span><br><span class="line">            while(seed &gt;&#x3D; end)&#123;</span><br><span class="line">                if(seed &lt;&#x3D; INT_MIN&gt;&gt;1)&#123;</span><br><span class="line">                    if(!count)&#123;</span><br><span class="line">                        overflow &#x3D; 1;</span><br><span class="line">                        count++;</span><br><span class="line">                    &#125; </span><br><span class="line">                    </span><br><span class="line">                    break;</span><br><span class="line">                &#125; </span><br><span class="line">                seed &#x3D; (unsigned int)seed&lt;&lt;1;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">            if(count) &#123;</span><br><span class="line">                ret -&#x3D; 1&lt;&lt;(count - 1);</span><br><span class="line">            &#125;</span><br><span class="line">            int last_value;</span><br><span class="line">            if(!overflow)&#123;</span><br><span class="line">                last_value &#x3D; seed&gt;&gt;1;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                last_value &#x3D; seed;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            end &#x3D; end - last_value;</span><br><span class="line">            seed &#x3D; divisor;</span><br><span class="line">            count &#x3D; 0;</span><br><span class="line">        &#125;</span><br><span class="line">        if(sign &lt; 0)&#123;</span><br><span class="line">            return ret;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            if(ret &#x3D;&#x3D; INT_MIN)&#123;</span><br><span class="line">                return INT_MAX;</span><br><span class="line">            &#125;</span><br><span class="line">            return 0 - ret;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="代码实现（参考不用位操作的递归思想）"><a href="#代码实现（参考不用位操作的递归思想）" class="headerlink" title="代码实现（参考不用位操作的递归思想）"></a>代码实现（参考不用位操作的递归思想）</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>5.9MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int divide(int dividend, int divisor) &#123;</span><br><span class="line">        int ret &#x3D; 0;</span><br><span class="line">        int count &#x3D; 0;</span><br><span class="line">        int sign &#x3D; 1;</span><br><span class="line">        if(dividend &lt; 0)&#123;</span><br><span class="line">            sign &#x3D; 0 - sign;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            dividend &#x3D; 0 - dividend;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(divisor &lt; 0)&#123;</span><br><span class="line">            sign &#x3D; 0 - sign;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            divisor &#x3D; 0 - divisor;</span><br><span class="line">        &#125;</span><br><span class="line">        div(dividend, divisor, divisor, count, ret); </span><br><span class="line">        if(sign &gt; 0)&#123;</span><br><span class="line">            if(ret &#x3D;&#x3D; INT_MIN)&#123;</span><br><span class="line">                return INT_MAX;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                return 0 - ret;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; </span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    void div(int dividend, int divisor, int sor, int count,int &amp;result)&#123;</span><br><span class="line">        if(dividend &gt; divisor)&#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125; </span><br><span class="line">        if(dividend &#x3D;&#x3D; divisor)&#123;</span><br><span class="line">            result--;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        int toClose;</span><br><span class="line">        int overflow &#x3D; 0;</span><br><span class="line">        if(sor &lt; INT_MIN&gt;&gt;1)&#123;</span><br><span class="line">            overflow &#x3D; 1;</span><br><span class="line">            toClose &#x3D; sor;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            toClose &#x3D; sor + sor;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(!overflow &amp;&amp; toClose &gt; dividend)&#123;</span><br><span class="line">            if(!count) &#123;</span><br><span class="line">                count &#x3D; 1;</span><br><span class="line">            &#125;</span><br><span class="line">            count &#x3D; count + count;</span><br><span class="line">            div(dividend, divisor, toClose, count, result);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(overflow || toClose &lt;&#x3D; dividend)&#123;</span><br><span class="line">            if(!count)&#123;</span><br><span class="line">                result -&#x3D; 1;</span><br><span class="line">            &#125; </span><br><span class="line">            else&#123;</span><br><span class="line">                result -&#x3D; count;</span><br><span class="line">            &#125;</span><br><span class="line">            count &#x3D; 0;</span><br><span class="line">            div(dividend - sor, divisor, divisor, count, result);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="字母异位词分组-NO-49"><a href="#字母异位词分组-NO-49" class="headerlink" title="字母异位词分组 NO.49"></a>字母异位词分组 NO.49</h3><h5 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。</p>
-<p>示例:</p>
-<p>输入: [“eat”, “tea”, “tan”, “ate”, “nat”, “bat”]<br>输出:<br>[<br>  [“ate”,”eat”,”tea”],<br>  [“nat”,”tan”],<br>  [“bat”]<br>]<br>说明：</p>
-<p>所有输入均为小写字母。<br>不考虑答案输出的顺序。</p>
-<h5 id="代码实现（参考用排序后的单词作为hashkey）："><a href="#代码实现（参考用排序后的单词作为hashkey）：" class="headerlink" title="代码实现（参考用排序后的单词作为hashkey）："></a>代码实现（参考用排序后的单词作为hashkey）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>112ms</td>
-<td>超过23.14%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>16.4MB</td>
-<td>超过–%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;string&gt;&gt; groupAnagrams(vector&lt;string&gt;&amp; strs) &#123;</span><br><span class="line">        int sSize &#x3D; strs.size();</span><br><span class="line">        vector&lt;vector&lt;string&gt;&gt; ret;</span><br><span class="line">        map&lt;string, vector&lt;string&gt;&gt; store;</span><br><span class="line">        map&lt;string, vector&lt;string&gt;&gt;::iterator iter;</span><br><span class="line">        </span><br><span class="line">        for(int i&#x3D;0; i &lt; sSize; i++)&#123;</span><br><span class="line">            string toHash &#x3D; strs[i];</span><br><span class="line">            sort(toHash.begin(), toHash.end());</span><br><span class="line">            store[toHash].push_back(strs[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        for(iter &#x3D; store.begin(); iter !&#x3D; store.end(); iter++)&#123;</span><br><span class="line">            ret.push_back(iter-&gt;second);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h5 id="代码实现（参考一次循环）："><a href="#代码实现（参考一次循环）：" class="headerlink" title="代码实现（参考一次循环）："></a>代码实现（参考一次循环）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>56ms</td>
-<td>超过98.19%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>14.8MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;string&gt;&gt; groupAnagrams(vector&lt;string&gt;&amp; strs) &#123;</span><br><span class="line">        int sSize &#x3D; strs.size();</span><br><span class="line">        vector&lt;vector&lt;string&gt;&gt; ret;</span><br><span class="line">        unordered_map&lt;string, int&gt; store;</span><br><span class="line">        </span><br><span class="line">        for(int i&#x3D;0; i &lt; sSize; i++)&#123;</span><br><span class="line">            string toHash &#x3D; strs[i];</span><br><span class="line">            sort(toHash.begin(), toHash.end());</span><br><span class="line">            if(!store.count(toHash))&#123;</span><br><span class="line">                store[toHash] &#x3D; ret.size();</span><br><span class="line">                ret.push_back(&#123;&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">            ret[store[toHash]].push_back(strs[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h3 id="螺旋矩阵-NO-54"><a href="#螺旋矩阵-NO-54" class="headerlink" title="螺旋矩阵 NO.54"></a>螺旋矩阵 NO.54</h3><p>题目描述：</p>
-<p>给定一个包含 m x n 个元素的矩阵（m 行, n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。</p>
-<p>示例 1:</p>
-<p>输入:<br>[<br> [ 1, 2, 3 ],<br> [ 4, 5, 6 ],<br> [ 7, 8, 9 ]<br>]<br>输出: [1,2,3,6,9,8,7,4,5]</p>
-<h5 id="代码实现（原创，-按照运动轨迹移动指针，连续变向两次结束循环）："><a href="#代码实现（原创，-按照运动轨迹移动指针，连续变向两次结束循环）：" class="headerlink" title="代码实现（原创， 按照运动轨迹移动指针，连续变向两次结束循环）："></a>代码实现（原创， 按照运动轨迹移动指针，连续变向两次结束循环）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>4ms</td>
-<td>超过37.74%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6.5MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; spiralOrder(vector&lt;vector&lt;int&gt;&gt;&amp; matrix) &#123;</span><br><span class="line">        vector&lt;int&gt; ret;</span><br><span class="line">        int row_num &#x3D; matrix.size();</span><br><span class="line">        int col_num;</span><br><span class="line">        if(row_num)&#123;</span><br><span class="line">            col_num &#x3D; matrix[0].size();</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            return &#123;&#125;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        int circle &#x3D; 0;</span><br><span class="line">        int direct &#x3D; 0; &#x2F;&#x2F; 0:right 1:down 2:left 3:up</span><br><span class="line">        int col &#x3D; 0;</span><br><span class="line">        int row &#x3D; 0;</span><br><span class="line">        int directCount &#x3D; 0;</span><br><span class="line">        while(directCount &lt; 2)&#123;</span><br><span class="line">            if(!directCount)&#123;</span><br><span class="line">                ret.push_back(matrix[row][col]);</span><br><span class="line">            &#125;</span><br><span class="line">            switch(direct)&#123;</span><br><span class="line">                case 0:&#123;</span><br><span class="line">                    if(col !&#x3D; col_num - 1 - circle)&#123;</span><br><span class="line">                        col++;</span><br><span class="line">                        directCount &#x3D; 0;</span><br><span class="line">                    &#125;</span><br><span class="line">                    else&#123;</span><br><span class="line">                        direct &#x3D; 1;</span><br><span class="line">                        directCount++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                case 1:&#123;</span><br><span class="line">                    if(row !&#x3D; row_num - 1 - circle)&#123;</span><br><span class="line">                        row++;</span><br><span class="line">                        directCount &#x3D; 0;</span><br><span class="line">                    &#125;</span><br><span class="line">                    else&#123;</span><br><span class="line">                        direct &#x3D; 2;</span><br><span class="line">                        directCount++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                case 2:&#123;</span><br><span class="line">                    if(col !&#x3D; circle)&#123;</span><br><span class="line">                        col--;</span><br><span class="line">                        directCount &#x3D; 0;</span><br><span class="line">                    &#125;</span><br><span class="line">                    else&#123;</span><br><span class="line">                        direct &#x3D; 3;</span><br><span class="line">                        directCount++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">                case 3:&#123;</span><br><span class="line">                    if(row !&#x3D; circle + 1)&#123;</span><br><span class="line">                        row--;</span><br><span class="line">                        directCount &#x3D; 0;</span><br><span class="line">                    &#125;</span><br><span class="line">                    else&#123;</span><br><span class="line">                        circle++;</span><br><span class="line">                        direct &#x3D; 0;</span><br><span class="line">                        directCount++;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="代码实现（参考设置上下左右边界）："><a href="#代码实现（参考设置上下左右边界）：" class="headerlink" title="代码实现（参考设置上下左右边界）："></a>代码实现（参考设置上下左右边界）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>4ms</td>
-<td>超过37.74%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6.7MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; spiralOrder(vector&lt;vector&lt;int&gt;&gt;&amp; matrix) &#123;</span><br><span class="line">        vector&lt;int&gt; ret;</span><br><span class="line">        int row_num &#x3D; matrix.size();</span><br><span class="line">        int col_num;</span><br><span class="line">        if(row_num)&#123;</span><br><span class="line">            col_num &#x3D; matrix[0].size();</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            return &#123;&#125;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        int up &#x3D; 0;</span><br><span class="line">        int down &#x3D; row_num - 1;</span><br><span class="line">        int left &#x3D; 0;</span><br><span class="line">        int right &#x3D; col_num - 1;</span><br><span class="line">        while(1)&#123;</span><br><span class="line"></span><br><span class="line">            for(int i &#x3D; left; i &lt;&#x3D; right; i++)&#123;</span><br><span class="line">                ret.push_back(matrix[up][i]);</span><br><span class="line">            &#125;</span><br><span class="line">            if(++up &gt; down) break;</span><br><span class="line"></span><br><span class="line">            for(int i &#x3D; up; i &lt;&#x3D; down; i++)&#123;</span><br><span class="line">                ret.push_back(matrix[i][right]);</span><br><span class="line">            &#125;</span><br><span class="line">            if(--right &lt; left) break;</span><br><span class="line">            </span><br><span class="line">            for(int i &#x3D; right; i &gt;&#x3D; left; i--)&#123;</span><br><span class="line">                ret.push_back(matrix[down][i]);</span><br><span class="line">            &#125;</span><br><span class="line">            if(--down &lt; up) break;</span><br><span class="line">            </span><br><span class="line">            for(int i &#x3D; down; i &gt;&#x3D; up; i--)&#123;</span><br><span class="line">                ret.push_back(matrix[i][left]);</span><br><span class="line">            &#125;</span><br><span class="line">            if(++left &gt; right) break;</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="最大子序和-NO-53"><a href="#最大子序和-NO-53" class="headerlink" title="最大子序和 NO.53"></a>最大子序和 NO.53</h3><h5 id="题目描述：-2"><a href="#题目描述：-2" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
-<p>示例:</p>
-<p>输入: [-2,1,-3,4,-1,2,1,-5,4],<br>输出: 6<br>解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。</p>
-<h5 id="代码实现（参考动态规划）："><a href="#代码实现（参考动态规划）：" class="headerlink" title="代码实现（参考动态规划）："></a>代码实现（参考动态规划）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>4ms</td>
-<td>超过97.39%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>6.9MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxSubArray(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int pre &#x3D; 0;</span><br><span class="line">        int MaxNum &#x3D; nums[0];</span><br><span class="line">        for(int x : nums)&#123;</span><br><span class="line">            pre &#x3D; max(pre + x, x);</span><br><span class="line">            MaxNum &#x3D; max(MaxNum, pre);</span><br><span class="line">        &#125;</span><br><span class="line">        return MaxNum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2020/07/17/LeetCode-Dairy-XI/"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XI"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-17T10:48:01.000Z" title="2020-07-17T10:48:01.000Z">2020-07-17</time><span class="level-item"> vi </span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a></span><span class="level-item">3 分钟 读完 (大约 405 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/17/LeetCode-Dairy-XI/">LeetCode Dairy XI</a></h1><div class="content"><h3 id="旋转图像-NO-48"><a href="#旋转图像-NO-48" class="headerlink" title="旋转图像 NO.48"></a>旋转图像 NO.48</h3><h5 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h5><p>给定一个 n × n 的二维矩阵表示一个图像。</p>
-<p>将图像顺时针旋转 90 度。</p>
-<p>说明：</p>
-<p>你必须在原地旋转图像，这意味着你需要直接修改输入的二维矩阵。请不要使用另一个矩阵来旋转图像。</p>
-<p>示例 1:</p>
-<p>给定 matrix =<br>[<br>  [1,2,3],<br>  [4,5,6],<br>  [7,8,9]<br>],</p>
-<p>原地旋转输入矩阵，使其变为:<br>[<br>  [7,4,1],<br>  [8,5,2],<br>  [9,6,3]<br>]</p>
-<h5 id="代码实现（原创，先逆置，再调转）："><a href="#代码实现（原创，先逆置，再调转）：" class="headerlink" title="代码实现（原创，先逆置，再调转）："></a>代码实现（原创，先逆置，再调转）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0 ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>7.2MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void rotate(vector&lt;vector&lt;int&gt;&gt;&amp; matrix) &#123;</span><br><span class="line">        int n &#x3D; matrix.size();</span><br><span class="line">        for(int i &#x3D; 0;i &lt; n; i++)&#123;</span><br><span class="line">            for(int j &#x3D; 0;j &lt; n;j++)&#123;</span><br><span class="line">                if(i &lt; j)&#123;</span><br><span class="line">                    int temp &#x3D; matrix[i][j];</span><br><span class="line">                    matrix[i][j] &#x3D; matrix[j][i];</span><br><span class="line">                    matrix[j][i] &#x3D; temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int k &#x3D; 0; k &lt; n; k++)&#123;</span><br><span class="line">            reverse(matrix[k].begin(), matrix[k].end());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="代码实现（参考以四个点为单位旋转，寻找四个点关系的思想）："><a href="#代码实现（参考以四个点为单位旋转，寻找四个点关系的思想）：" class="headerlink" title="代码实现（参考以四个点为单位旋转，寻找四个点关系的思想）："></a>代码实现（参考以四个点为单位旋转，寻找四个点关系的思想）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>0 ms</td>
-<td>超过100%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>7.3MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void rotate(vector&lt;vector&lt;int&gt;&gt;&amp; matrix) &#123;</span><br><span class="line">        int n &#x3D; matrix.size();</span><br><span class="line">        for(int i &#x3D; 0; i &lt; n&#x2F;2; i++)&#123;</span><br><span class="line">            for(int j &#x3D; i; j &lt; n- 1 -i; j++)&#123;</span><br><span class="line">                int temp &#x3D; matrix[i][j];</span><br><span class="line">                matrix[i][j] &#x3D; matrix[n - 1 - j][i];</span><br><span class="line">                matrix[n - 1 -j ][i] &#x3D; matrix[n - 1 -i][n - 1 -j];</span><br><span class="line">                matrix[n - 1 -i][n - 1 -j] &#x3D; matrix[j][n-1-i];</span><br><span class="line">                matrix[j][n-1-i] &#x3D; temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="代码实现（参考运动轨迹思想）："><a href="#代码实现（参考运动轨迹思想）：" class="headerlink" title="代码实现（参考运动轨迹思想）："></a>代码实现（参考运动轨迹思想）：</h5><table>
-<thead>
-<tr>
-<th>执行结果</th>
-<th>用量</th>
-<th>排名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用时</td>
-<td>4 ms</td>
-<td>超过61.25%用户</td>
-</tr>
-<tr>
-<td>内存</td>
-<td>7.2MB</td>
-<td>超过100%用户</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void rotate(vector&lt;vector&lt;int&gt;&gt;&amp; matrix) &#123;</span><br><span class="line">        int n &#x3D; matrix.size();</span><br><span class="line">        int stepSub &#x3D; n - 1;</span><br><span class="line">        int stepPlus &#x3D; 0;</span><br><span class="line">        while(stepSub &gt;&#x3D; stepPlus)&#123;</span><br><span class="line">            int start &#x3D; stepPlus;</span><br><span class="line">            int end &#x3D; stepSub;</span><br><span class="line">            while(start !&#x3D; stepSub)&#123;</span><br><span class="line">                int temp &#x3D; matrix[stepPlus][start];</span><br><span class="line">                matrix[stepPlus][start] &#x3D; matrix[end][stepPlus];</span><br><span class="line">                matrix[end][stepPlus] &#x3D; matrix[stepSub][end];</span><br><span class="line">                matrix[stepSub][end] &#x3D; matrix[start][stepSub];</span><br><span class="line">                matrix[start][stepSub] &#x3D; temp;</span><br><span class="line"></span><br><span class="line">                end--;</span><br><span class="line">                start++;</span><br><span class="line">            &#125;</span><br><span class="line">            stepSub--;</span><br><span class="line">            stepPlus++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/categories/tech/">上一页</a></div><div class="pagination-next"><a href="/categories/tech/page/3/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/categories/tech/">1</a></li><li><a class="pagination-link is-current" href="/categories/tech/page/2/">2</a></li><li><a class="pagination-link" href="/categories/tech/page/3/">3</a></li><li><a class="pagination-link" href="/categories/tech/page/4/">4</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar-d-trans.png" alt="vi"></figure><p class="title is-size-4 is-block line-height-inherit">vi</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>MARS</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">35</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="/" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/game/"><span class="level-start"><span class="level-item">game</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/tech/"><span class="level-start"><span class="level-item">tech</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><a class="media-left" href="/2020/08/18/LeetCode-Dairy-XXX/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXX"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-18T09:46:50.000Z">2020-08-18</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/18/LeetCode-Dairy-XXX/">LeetCode Dairy XXX</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/17/LeetCode-Dairy-XXIX/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXIX"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-17T08:52:56.000Z">2020-08-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/17/LeetCode-Dairy-XXIX/">LeetCode Dairy XXIX</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/14/LeetCode-Dairy-XXVIII/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXVIII"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-14T07:13:29.000Z">2020-08-14</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/14/LeetCode-Dairy-XXVIII/">LeetCode Dairy XXVIII</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/13/LeetCode-Dairy-XXVII/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXVII"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-13T06:28:08.000Z">2020-08-13</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/13/LeetCode-Dairy-XXVII/">LeetCode Dairy XXVII</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/12/LeetCode-Dairy-XXVI/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXVI"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-12T08:54:32.000Z">2020-08-12</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/12/LeetCode-Dairy-XXVI/">LeetCode Dairy XXVI</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">八月 2020</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">七月 2020</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">六月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/algorithm/"><span class="tag">algorithm</span><span class="tag is-grey-lightest">30</span></a></div><div class="control"><a class="tags has-addons" href="/tags/github/"><span class="tag">github</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hard/"><span class="tag">hard</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/kernel/"><span class="tag">kernel</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/linux/"><span class="tag">linux</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Shelter" height="28"></a><p class="size-small"><span>&copy; 2020 vi</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/categories/tech/">上一页</a></div><div class="pagination-next"><a href="/categories/tech/page/3/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/categories/tech/">1</a></li><li><a class="pagination-link is-current" href="/categories/tech/page/2/">2</a></li><li><a class="pagination-link" href="/categories/tech/page/3/">3</a></li><li><a class="pagination-link" href="/categories/tech/page/4/">4</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar-d-trans.png" alt="vi"></figure><p class="title is-size-4 is-block line-height-inherit">vi</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>MARS</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">39</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="/" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/game/"><span class="level-start"><span class="level-item">game</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/tech/"><span class="level-start"><span class="level-item">tech</span></span><span class="level-end"><span class="level-item tag">38</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><a class="media-left" href="/2020/08/23/LeetCode-Dairy-XXXIV/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXXIV"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-23T09:26:42.000Z">2020-08-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/23/LeetCode-Dairy-XXXIV/">LeetCode Dairy XXXIV</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/22/LeetCode-Dairy-XXXIII/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXXIII"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-22T09:22:56.000Z">2020-08-22</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/22/LeetCode-Dairy-XXXIII/">LeetCode Dairy XXXIII</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/20/LeetCode-Dairy-XXXII/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXXII"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-20T09:38:22.000Z">2020-08-20</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/20/LeetCode-Dairy-XXXII/">LeetCode Dairy XXXII</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/19/LeetCode-Dairy-XXXI/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXXI"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-19T10:58:36.000Z">2020-08-19</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/19/LeetCode-Dairy-XXXI/">LeetCode Dairy XXXI</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article><article class="media"><a class="media-left" href="/2020/08/18/LeetCode-Dairy-XXX/"><p class="image is-64x64"><img class="thumbnail" src="/gallery/algorithm.jpg" alt="LeetCode Dairy XXX"></p></a><div class="media-content size-small"><p><time dateTime="2020-08-18T09:46:50.000Z">2020-08-18</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/18/LeetCode-Dairy-XXX/">LeetCode Dairy XXX</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/tech/">tech</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">八月 2020</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">七月 2020</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">六月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/algorithm/"><span class="tag">algorithm</span><span class="tag is-grey-lightest">34</span></a></div><div class="control"><a class="tags has-addons" href="/tags/github/"><span class="tag">github</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hard/"><span class="tag">hard</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/kernel/"><span class="tag">kernel</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/linux/"><span class="tag">linux</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Shelter" height="28"></a><p class="size-small"><span>&copy; 2020 vi</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'http://yoursite.com',
                 external_link: {"enable":true,"exclude":[]}
